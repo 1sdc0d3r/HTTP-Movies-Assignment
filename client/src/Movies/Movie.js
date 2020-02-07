@@ -52,7 +52,7 @@ export default class Movie extends React.Component {
         <MovieCard movie={this.state.movie} />
         <Link to={`/update-movie/${this.state.movie.id}`}>
           {/* use props.match.params.id */}
-          <button>Update</button>
+          <h2>Update</h2>
         </Link>
         <button onClick={this.deleteMovie}>Delete</button>
         <div className="save-button" onClick={this.saveMovie}>
